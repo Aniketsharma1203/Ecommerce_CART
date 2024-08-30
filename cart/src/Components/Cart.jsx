@@ -5,8 +5,8 @@ export const Cart = () => {
     const { container, setcontainer } = useContext(UserContext);
 
     const removeItem = (index) => {
-        const updatedContainer = container.filter((_, i) => i !== index); // Create a new array without the selected item
-        setcontainer(updatedContainer); // Update the state with the new array
+        const updatedContainer = container.filter((_, i) => i !== index); 
+        setcontainer(updatedContainer); 
     };
 
     console.log(container);
